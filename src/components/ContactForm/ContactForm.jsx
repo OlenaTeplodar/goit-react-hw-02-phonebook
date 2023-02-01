@@ -23,9 +23,11 @@ export class ContactForm extends Component {
     evt.preventDefault();
     const { onSubmit } = this.props;
     const data = onSubmit({ ...this.state });
-    if (data) {
-      this.reset();
-    }
+    // console.log(data);
+    this.reset();
+    // if (data) {
+    //   this.reset();
+    // }
   };
 
   reset() {
@@ -84,5 +86,4 @@ export default ContactForm;
 
 ContactForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  onChange: PropTypes.func,
-};
+  };

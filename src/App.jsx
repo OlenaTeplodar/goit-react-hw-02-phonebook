@@ -5,10 +5,7 @@ import ContactList from 'components/ContactList';
 import Filter from 'components/Filter';
 
 class App extends Component {
-  static defaultProps = {
-    contacts: [],
-    filter: '',
-  };
+  
   state = {
     contacts: [
       { id: nanoid(), name: 'Rosie Simpson', number: '459-12-56' },
