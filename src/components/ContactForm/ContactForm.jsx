@@ -23,7 +23,7 @@ export class ContactForm extends Component {
     evt.preventDefault();
     const { onSubmit } = this.props;
     const data = onSubmit({ ...this.state });
-    // console.log(data);
+    console.log(data);
     this.reset();
     // if (data) {
     //   this.reset();
